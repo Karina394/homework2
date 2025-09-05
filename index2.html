@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8">
+        <title> форми </title> 
+            </head>
+            <body>
+                <h1>Реєстрація користувача</h1>
+                <form action="/sumbit" method="post">
+                    <label for="name">Ім'я:</label>
+                    <input type="text" id="name" name="username" required><br>
+                    <label for="email">Електронна пошта:</label>
+                    <input type="email" id="email" name="email" required><br>
+                    <label for="password">Пароль:</label>
+                    <input type="password" id="password" name="password" required><br>
+                    <label for="password">Підтвердіть пароль:</label>
+                    <input type="password" id="password" name="password" required>
+                    <div class="error">*Паролі не співпадають</div><br>
+                    <label for="male">Чоловік</label>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="female">Жінка</label>
+                    <input type="radio" id="female" name="gender" value="female"><br>
+                    <label for="country">Країна:</label>
+                    <select id="country" name="user_country">
+                    <option value="ukraine">Україна</option>
+                    <option value="poland">Польща</option>
+                    <option value="deutsh">Німеччина</option>
+                    <option value="usa">США</option>
+                    </select><br>
+                    <div class="checkbox">
+                    <input type="checkbox" id="agree" name="agree" required>
+                    <label for="agree">Я погоджуюсь з умовами використання</label><br>
+                    </div>
+                    <input type="submit" value="Зареєструватись">
+                    </form>
+                    </body>
+                    <style>
+                        body {
+                            font-family: Arial, sans-serif;
+                            background: #eddff0;
+                            text-align: center;
+                        }
+                        form {
+                            max-width: 400px;
+                            padding: 20px;
+                            border: 1px solid #ccc;
+                            border-radius: 5px;
+                            background-color: #f9f9f9;
+                        }
+                        label {
+                            display: block;
+                            margin-bottom: 8px;
+                            font-weight: bold;
+                        }
+                        input[type="text"],
+                        input[type="email"],
+                        input[type="password"],
+                        select {
+                            width: 100%;
+                            padding: 8px;
+                            margin-bottom: 15px;
+                            border: 1px solid #ccc;
+                            border-radius: 4px;
+                        }
+                        input[type="radio"],
+                        input[type="checkbox"] {
+                            margin-right: 10px;
+                        }
+                        .checkbox {
+                            margin-bottom: 15px;
+                        }
+                        input[type="submit"] {
+                            background-color: #2a582c;
+                            color: white;
+                            padding: 10px 15px;
+                            border: none;
+                            border-radius: 4px;
+                            cursor: pointer;
+                        }
+                        input[type="submit"]:hover {
+                            background-color: #275229;
+                        }
+                        .error {
+                            color: red;
+                            font-size: 0.9em;
+                            margin-top: -10px;
+                            margin-bottom: 10px;
+                        }
+                        </style>
+                    </html>
+
+
+
